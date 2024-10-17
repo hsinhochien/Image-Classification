@@ -22,7 +22,7 @@ The dataset should be a CSV file (```train.csv```) with the following columns:
 >* Epochs: 2
 >* Weight decay: 0.01
 >* Batch size: 16
->* Evaluation is performed at each epoch based on the F1 score.
+
 * Evaluation: The model is evaluated on the validation set using accuracy and F1 score. After training, the model is saved to the ```trained_model/``` directory.
 
 * Inference and Confusion Matrix: After training, the trained model is used for inference on the test set. Predictions are made using Hugging Face's ```pipeline```. The predicted and true labels are compared, and a confusion matrix is computed and visualized.
